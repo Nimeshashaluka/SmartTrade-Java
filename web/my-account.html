@@ -29,7 +29,7 @@
     </head>
 
 
-    <body class="sticky-header">
+    <body class="sticky-header" onload="loadFeatures();">
         <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
@@ -151,7 +151,7 @@
                                         <span class="title">QUICKLINKS</span>
                                         <ul>
                                             <li>
-                                                <a href="#">My Account</a>
+                                                <a href="my-account.html">My Account</a>
                                             </li>
                                             <li>
                                                 <a href="#">Support</a>
@@ -206,7 +206,7 @@
                         <div class="axil-dashboard-author">
                             <div class="media">
                                 <div class="thumbnail">
-                                    <img src="./assets/images/avatar.png" alt="Hello Annie">
+                                    <img src="./assets/images/WhatsApp Image 2023-03-12 at 1.54.33 PM (2).jpeg" alt="Hello Annie" style="height: 60px;">
                                 </div>
                                 <div class="media-body">
                                     <h5 class="title mb-0">Hello Name</h5>
@@ -241,20 +241,16 @@
                                                     <div class="col-lg-6">
                                                         <div class="form-group">
                                                             <label>Category</label>
-                                                            <select>
-                                                                <option>Data 1</option>
-                                                                <option>Data 2</option>
-                                                                <option>Data 3</option>
+                                                            <select id="categorySelect">
+                                                                <option value="0">Select</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="form-group">
                                                             <label>Model</label>
-                                                            <select>
-                                                                <option>Data 1</option>
-                                                                <option>Data 2</option>
-                                                                <option>Data 3</option>
+                                                             <select id="modelSelect">
+                                                                <option value="0">Select</option>
                                                             </select>
                                                         </div>
                                                     </div>                                                        
@@ -274,20 +270,16 @@
                                                     <div class="col-lg-6">
                                                         <div class="form-group">
                                                             <label>Storage</label>
-                                                            <select>
-                                                                <option>Data 1</option>
-                                                                <option>Data 2</option>
-                                                                <option>Data 3</option>
+                                                            <select id="StorageSelect">
+                                                                <option value="0">Select</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="form-group">
                                                             <label>Color</label>
-                                                            <select>
-                                                                <option>Data 1</option>
-                                                                <option>Data 2</option>
-                                                                <option>Data 3</option>
+                                                         <select id="colorSelect">
+                                                                <option value="0">Select</option>
                                                             </select>
                                                         </div>
                                                     </div> 
@@ -295,9 +287,8 @@
                                                     <div class="col-lg-4">
                                                         <div class="form-group">
                                                             <label>Condition</label>
-                                                            <select>
-                                                                <option>Data 1</option>
-                                                                <option>Data 2</option>
+                                                            <select id="conditionSelect">
+                                                                <option value="0">Select</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -738,7 +729,7 @@
 
         <!-- Main JS -->
         <script src="assets/js/main.js"></script>
-
+        <script src="assets/js/my-account.js"></script>
     </body>
 
 </html>
